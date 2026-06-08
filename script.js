@@ -1,17 +1,23 @@
-// Troca de Tema
+// Alternar tema dark/light
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('light');
+  
   const icon = themeToggle.querySelector('i');
-  icon.classList.toggle('fa-moon');
-  icon.classList.toggle('fa-sun');
+  if (body.classList.contains('light')) {
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  } else {
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
 });
 
-// Formulário (simulado)
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+// Formulário de contato
+document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  alert('✅ Mensagem enviada com sucesso! (Simulação)');
-  e.target.reset();
+  alert('✅ Mensagem enviada com sucesso! (Demonstração)');
+  this.reset();
 });
