@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus | Meu Portfólio</title>
+  <title>Aura | Meu Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,7 +12,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      <h1 class="logo">NEXUS</h1>
+      <h1 class="logo">AURA</h1>
       <div class="nav-links">
         <a href="#home">Início</a>
         <a href="#sobre">Sobre</a>
@@ -30,21 +30,23 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h2>Olá, eu sou <span class="highlight">SEU NOME AQUI</span></h2>
-      <p class="subtitle">Estudante do 1º ano do Ensino Médio • Apaixonado por tecnologia</p>
+      <p class="subtitle">Estudante do 1º ano do Ensino Médio • Criador digital</p>
       <div class="hero-buttons">
-        <a href="#projetos" class="btn primary">Ver Projetos</a>
-        <a href="#contato" class="btn secondary">Fale Comigo</a>
+        <a href="#projetos" class="btn primary">Ver Meus Projetos</a>
+        <a href="#contato" class="btn secondary">Fale comigo</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="assets/images/foto-perfil.jpg" alt="Foto de Perfil">
+      <img src="assets/images/perfil.jpg" alt="Foto de Perfil">
     </div>
   </section>
 
   <!-- Sobre -->
   <section id="sobre" class="section">
     <h2>Sobre Mim</h2>
-    <p>Tenho 15 anos e estou no 1º ano do Ensino Médio. Gosto de criar sites, editar fotos e aprender novas tecnologias. Este projeto foi desenvolvido com HTML, CSS e JavaScript puro.</p>
+    <div class="sobre-content">
+      <p>Tenho 15 anos e estou no 1º ano do Ensino Médio. Sou apaixonado por tecnologia, design e programação. Este portfólio foi criado do zero usando HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.</p>
+    </div>
   </section>
 
   <!-- Projetos -->
@@ -52,31 +54,38 @@
     <h2>Meus Projetos</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="assets/images/projeto1.jpg" alt="Projeto 1">
-        <h3>Site de Receitas</h3>
-        <p>Site responsivo com receitas deliciosas.</p>
+        <img src="assets/images/proj1.jpg" alt="Projeto 1">
+        <div class="card-info">
+          <h3>Site de Receitas</h3>
+          <p>Site bonito e responsivo para compartilhar receitas.</p>
+        </div>
       </div>
       <div class="project-card">
-        <img src="assets/images/projeto2.jpg" alt="Projeto 2">
-        <h3>Calculadora Inteligente</h3>
-        <p>Calculadora com histórico e temas.</p>
+        <img src="assets/images/proj2.jpg" alt="Projeto 2">
+        <div class="card-info">
+          <h3>Calculadora Moderna</h3>
+          <p>Calculadora com temas e histórico de cálculos.</p>
+        </div>
       </div>
       <div class="project-card">
-        <img src="assets/images/projeto3.jpg" alt="Projeto 3">
-        <h3>Clima em Tempo Real</h3>
-        <p>Consulta previsão do tempo usando API.</p>
+        <img src="assets/images/proj3.jpg" alt="Projeto 3">
+        <div class="card-info">
+          <h3>Previsão do Tempo</h3>
+          <p>App que mostra o clima em tempo real.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Galeria -->
   <section id="galeria" class="section">
-    <h2>Galeria</h2>
+    <h2>Galeria de Imagens</h2>
     <div class="gallery-grid">
-      <img src="assets/images/projeto1.jpg" alt="Imagem 1">
-      <img src="assets/images/projeto2.jpg" alt="Imagem 2">
-      <img src="assets/images/projeto3.jpg" alt="Imagem 3">
-      <img src="assets/images/foto-perfil.jpg" alt="Imagem 4">
+      <img src="assets/images/galeria1.jpg" alt="Galeria 1">
+      <img src="assets/images/proj1.jpg" alt="Galeria 2">
+      <img src="assets/images/proj2.jpg" alt="Galeria 3">
+      <img src="assets/images/proj3.jpg" alt="Galeria 4">
+      <img src="assets/images/perfil.jpg" alt="Galeria 5">
     </div>
   </section>
 
@@ -85,8 +94,8 @@
     <h2>Entre em Contato</h2>
     <form id="contact-form">
       <input type="text" placeholder="Seu Nome" required>
-      <input type="email" placeholder="Seu Email" required>
-      <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+      <input type="email" placeholder="Seu E-mail" required>
+      <textarea placeholder="Escreva sua mensagem..." rows="6" required></textarea>
       <button type="submit" class="btn primary">Enviar Mensagem</button>
     </form>
   </section>
