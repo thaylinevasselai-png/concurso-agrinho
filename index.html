@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura | Meu Portfólio</title>
+  <title>Terra Viva | Projeto Agrinho</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,11 +12,12 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      <h1 class="logo">AURA</h1>
+      <h1 class="logo">🌱 TERRA VIVA</h1>
       <div class="nav-links">
         <a href="#home">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#agrinho">O Agrinho</a>
+        <a href="#projetos">Meus Projetos</a>
         <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
       </div>
@@ -30,48 +31,54 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h2>Olá, eu sou <span class="highlight">SEU NOME AQUI</span></h2>
-      <p class="subtitle">Estudante do 1º ano do Ensino Médio • Criador digital</p>
+      <p class="subtitle">Estudante do 1º ano do Ensino Médio • Projeto Agrinho 2026</p>
       <div class="hero-buttons">
-        <a href="#projetos" class="btn primary">Ver Meus Projetos</a>
-        <a href="#contato" class="btn secondary">Fale comigo</a>
+        <a href="#projetos" class="btn primary">Ver Projetos</a>
+        <a href="#agrinho" class="btn secondary">Conheça o Agrinho</a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="assets/images/perfil.jpg" alt="Foto de Perfil">
+      <img src="assets/images/perfil.jpg" alt="Foto do Autor">
     </div>
   </section>
 
   <!-- Sobre -->
   <section id="sobre" class="section">
     <h2>Sobre Mim</h2>
-    <div class="sobre-content">
-      <p>Tenho 15 anos e estou no 1º ano do Ensino Médio. Sou apaixonado por tecnologia, design e programação. Este portfólio foi criado do zero usando HTML, CSS e JavaScript para mostrar minhas habilidades e projetos.</p>
+    <p>Sou estudante do 1º ano do Ensino Médio e participei do Projeto Agrinho com o tema <strong>"Agricultura Familiar e Sustentabilidade"</strong>. Criei este site para mostrar o que aprendi sobre o campo, a importância da natureza e como a tecnologia pode ajudar o agro.</p>
+  </section>
+
+  <!-- O Agrinho -->
+  <section id="agrinho" class="section">
+    <h2>O Projeto Agrinho</h2>
+    <div class="agrinho-content">
+      <p>O Agrinho é um projeto educativo que ensina crianças e jovens sobre agricultura, meio ambiente, cooperativismo e sustentabilidade. Neste ano, trabalhei o tema da preservação do solo, plantio consciente e valorização da agricultura familiar.</p>
     </div>
   </section>
 
   <!-- Projetos -->
   <section id="projetos" class="section">
-    <h2>Meus Projetos</h2>
+    <h2>Meus Projetos no Agrinho</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="assets/images/proj1.jpg" alt="Projeto 1">
+        <img src="assets/images/plantacao.jpg" alt="Horta Escolar">
         <div class="card-info">
-          <h3>Site de Receitas</h3>
-          <p>Site bonito e responsivo para compartilhar receitas.</p>
+          <h3>Horta Escolar Sustentável</h3>
+          <p>Desenvolvimento de uma horta na escola com reaproveitamento de água.</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="assets/images/proj2.jpg" alt="Projeto 2">
+        <img src="assets/images/fazenda.jpg" alt="Agricultura Familiar">
         <div class="card-info">
-          <h3>Calculadora Moderna</h3>
-          <p>Calculadora com temas e histórico de cálculos.</p>
+          <h3>Agricultura Familiar</h3>
+          <p>Entrevista com produtores rurais da minha região.</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="assets/images/proj3.jpg" alt="Projeto 3">
+        <img src="assets/images/horta.jpg" alt="Compostagem">
         <div class="card-info">
-          <h3>Previsão do Tempo</h3>
-          <p>App que mostra o clima em tempo real.</p>
+          <h3>Compostagem Caseira</h3>
+          <p>Como transformar resíduos orgânicos em adubo natural.</p>
         </div>
       </div>
     </div>
@@ -79,13 +86,13 @@
 
   <!-- Galeria -->
   <section id="galeria" class="section">
-    <h2>Galeria de Imagens</h2>
+    <h2>Galeria do Agrinho</h2>
     <div class="gallery-grid">
-      <img src="assets/images/galeria1.jpg" alt="Galeria 1">
-      <img src="assets/images/proj1.jpg" alt="Galeria 2">
-      <img src="assets/images/proj2.jpg" alt="Galeria 3">
-      <img src="assets/images/proj3.jpg" alt="Galeria 4">
-      <img src="assets/images/perfil.jpg" alt="Galeria 5">
+      <img src="assets/images/plantacao.jpg" alt="Plantação">
+      <img src="assets/images/fazenda.jpg" alt="Fazenda">
+      <img src="assets/images/horta.jpg" alt="Horta">
+      <img src="assets/images/natureza.jpg" alt="Natureza">
+      <img src="assets/images/perfil.jpg" alt="Autor">
     </div>
   </section>
 
@@ -95,13 +102,13 @@
     <form id="contact-form">
       <input type="text" placeholder="Seu Nome" required>
       <input type="email" placeholder="Seu E-mail" required>
-      <textarea placeholder="Escreva sua mensagem..." rows="6" required></textarea>
-      <button type="submit" class="btn primary">Enviar Mensagem</button>
+      <textarea placeholder="Deixe sua mensagem..." rows="6" required></textarea>
+      <button type="submit" class="btn primary">Enviar</button>
     </form>
   </section>
 
   <footer>
-    <p>Feito com ❤️ por <strong>SEU NOME AQUI</strong> • 2026</p>
+    <p>🌱 Projeto Agrinho 2026 • Feito com ❤️ por <strong>SEU NOME AQUI</strong></p>
   </footer>
 
   <script src="js/script.js"></script>
